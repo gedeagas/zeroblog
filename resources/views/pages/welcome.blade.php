@@ -1,46 +1,82 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('maintemp')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+@section('thetitle')
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+Homepage
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+@endsection
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+@section('konten')
 
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Welcome Everyone</div>
-                <p>This is The Begining Man</p>
+<div class="jumbotron">
+  <h1>Latest Blog Post</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Read More</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+
+        <div class="post-home">
+
+            <div class="page-header">
+              <h2>Post Title Example</h2>
+              
             </div>
+            <p>Nulla tristique, orci id sagittis pretium, nunc urna vulputate est, in sodales urna lacus sed metus. Pellentesque sapien tellus, pharetra in accumsan ac, efficitur eget nisi...
+            </p>
+
+            <button type="button" class="btn btn-success">Read More</button>
+
         </div>
-    </body>
-</html>
+
+        <div class="post-home">
+
+            <div class="page-header">
+              <h2>Post Title Example</h2>
+              
+            </div>
+            <p>Nulla tristique, orci id sagittis pretium, nunc urna vulputate est, in sodales urna lacus sed metus. Pellentesque sapien tellus, pharetra in accumsan ac, efficitur eget nisi...
+            </p>
+
+            <button type="button" class="btn btn-success">Read More</button>
+
+        </div>
+
+        <div class="post-home">
+
+            <div class="page-header">
+              <h2>Post Title Example</h2>
+              
+            </div>
+            <p>Nulla tristique, orci id sagittis pretium, nunc urna vulputate est, in sodales urna lacus sed metus. Pellentesque sapien tellus, pharetra in accumsan ac, efficitur eget nisi...
+            </p>
+
+            <button type="button" class="btn btn-success">Read More</button>
+
+        </div>
+
+        <div class="post-home">
+
+            <div class="page-header">
+              <h2>Post Title Example</h2>
+              
+            </div>
+            <p>Nulla tristique, orci id sagittis pretium, nunc urna vulputate est, in sodales urna lacus sed metus. Pellentesque sapien tellus, pharetra in accumsan ac, efficitur eget nisi...
+            </p>
+
+            <button type="button" class="btn btn-success">Read More</button>
+
+        </div>
+
+
+    </div>
+
+    <div class="col-md-4">
+        
+    </div>
+</div>
+
+
+@endsection
