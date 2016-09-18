@@ -2,11 +2,17 @@
 
 namespace blog\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
+use blog\Post;
 
 class PagesController extends Controller {
 	
 	public function getIndex() {
-		return view('pages.welcome');
+		$posts = Post::select('id', 'title', 'body')
+						->orderBy('id', 'desc')
+						->limit(4)
+						->get();
+		return view('pages.welcome')->withPosts($posts);
 	}
 
 	public function getAbout() {

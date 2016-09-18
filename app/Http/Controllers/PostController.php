@@ -17,7 +17,14 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        // Create Varable and store all the blog post 
+
+        $posts = Post::orderBy('id', 'desc')->paginate(5);
+
+
+        // Return a view and shoing to the user 
+
+        return view('posts.index')->withPosts($posts);
     }
 
     /**
@@ -89,7 +96,15 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        // find the post
+        // cari post dengan id nya gan
+
+        $post = Post::find($id);
+
+        return view('posts.edit')->withPost($post);
+
+        // return the view pass in the information
+        // masukin var ke html
     }
 
     /**
@@ -101,7 +116,36 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //Validate the data ( awas indonesia banyak heker ngeri cuy ) 
+
+        $this->validate($request, array(
+                'title' => 'required|max:255',
+                'body' => 'required'
+
+
+        ));
+
+
+        //Save The Data jan lupa di save ke db gan
+        $post  = Post::find($id);
+
+        $post->title    =   $request->input('title');
+        $post->body     =   $request->input('body');
+
+
+        $post->save();
+
+
+
+        //Redirect and Alret man wkwkwk 
+
+        Session::flash('success', 'This post was successfully saved.');
+
+        //The Redirect 
+
+        return redirect()->route('posts.show', $post->id);
+
+
     }
 
     /**
@@ -112,6 +156,11 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+
+        $post->delete();
+
+        Session::flash('success', 'The post was successfully deleted');
+        return redirect()->route('posts.index');
     }
 }

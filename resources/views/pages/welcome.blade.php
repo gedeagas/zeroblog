@@ -17,59 +17,22 @@ Homepage
 
 <div class="row">
     <div class="col-md-8">
+        
+        @foreach($posts as $post)
 
-        <div class="post-home">
+            <div class="post-home">
 
-            <div class="page-header">
-              <h2>Post Title Example</h2>
-              
+                <div class="page-header">
+                  <h2>{{$post->title}}</h2>
+                  
+                </div>
+                <p>{{substr($post->body, 0, 250)}} {{ strlen($post->body) > 250 ? "..." : "" }}</p>
+
+                <a href="#" class="btn btn-success">Read More</a>
+
             </div>
-            <p>Nulla tristique, orci id sagittis pretium, nunc urna vulputate est, in sodales urna lacus sed metus. Pellentesque sapien tellus, pharetra in accumsan ac, efficitur eget nisi...
-            </p>
 
-            <button type="button" class="btn btn-success">Read More</button>
-
-        </div>
-
-        <div class="post-home">
-
-            <div class="page-header">
-              <h2>Post Title Example</h2>
-              
-            </div>
-            <p>Nulla tristique, orci id sagittis pretium, nunc urna vulputate est, in sodales urna lacus sed metus. Pellentesque sapien tellus, pharetra in accumsan ac, efficitur eget nisi...
-            </p>
-
-            <button type="button" class="btn btn-success">Read More</button>
-
-        </div>
-
-        <div class="post-home">
-
-            <div class="page-header">
-              <h2>Post Title Example</h2>
-              
-            </div>
-            <p>Nulla tristique, orci id sagittis pretium, nunc urna vulputate est, in sodales urna lacus sed metus. Pellentesque sapien tellus, pharetra in accumsan ac, efficitur eget nisi...
-            </p>
-
-            <button type="button" class="btn btn-success">Read More</button>
-
-        </div>
-
-        <div class="post-home">
-
-            <div class="page-header">
-              <h2>Post Title Example</h2>
-              
-            </div>
-            <p>Nulla tristique, orci id sagittis pretium, nunc urna vulputate est, in sodales urna lacus sed metus. Pellentesque sapien tellus, pharetra in accumsan ac, efficitur eget nisi...
-            </p>
-
-            <button type="button" class="btn btn-success">Read More</button>
-
-        </div>
-
+        @endforeach
 
     </div>
 
