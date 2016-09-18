@@ -19,3 +19,7 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+.button-post-margin {
+    margin-top: 20px;
+}
