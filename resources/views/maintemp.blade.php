@@ -9,12 +9,14 @@
   <body>
 
   @include('partials._nav')
-
+  
     <div class="container">
-    @include('partials._alert')     
+    @include('partials._alert')
+       
     @yield('konten')
 
     </div><!-- /.container -->
+
 
   @include('partials._footer')
 

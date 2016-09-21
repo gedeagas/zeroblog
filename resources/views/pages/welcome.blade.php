@@ -9,11 +9,6 @@ Homepage
 
 @section('konten')
 
-<div class="jumbotron">
-  <h1>Latest Blog Post</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Read More</a></p>
-</div>
 
 <div class="row">
     <div class="col-md-8">
@@ -22,13 +17,12 @@ Homepage
 
             <div class="post-home">
 
-                <div class="page-header">
-                  <h2>{{$post->title}}</h2>
+               
+                <h3>{{$post->title}}</h3>
                   
-                </div>
-                <p>{{substr($post->body, 0, 250)}} {{ strlen($post->body) > 250 ? "..." : "" }}</p>
+                <p>{{substr(strip_tags($post->body), 0, 250)}} {{ strlen($post->body) > 250 ? "..." : "" }}</p>
 
-                <a href="#" class="btn btn-success">Read More</a>
+                <a href="{{ url('blog/'.$post->slug)}}" class="btn btn-success">Read More</a>
 
             </div>
 

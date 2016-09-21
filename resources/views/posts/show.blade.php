@@ -7,11 +7,17 @@
 		<div class="col-md-8">
 			<h1>{{ $post->title }}</h1>
 
-			<p class="lead">{{ $post->body }} </p>
+			<p class="lead">{!! $post->body !!} </p>
 		</div>
 
 		<div class="col-md-4">
 			<div class="well">
+				<dl class="dl-horizontal">
+
+					<dt>Url Slug :</dt>
+					<dd><a href="{{ url('blog/'.$post->slug)}}">{{$post->slug}}</a></dd>
+
+				</dl>
 				<dl class="dl-horizontal">
 
 					<dt>Created At :</dt>

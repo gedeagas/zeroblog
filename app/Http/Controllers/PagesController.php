@@ -8,7 +8,7 @@ use blog\Post;
 class PagesController extends Controller {
 	
 	public function getIndex() {
-		$posts = Post::select('id', 'title', 'body')
+		$posts = Post::select('*')
 						->orderBy('id', 'desc')
 						->limit(4)
 						->get();

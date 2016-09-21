@@ -6,6 +6,13 @@
 <link href="/css/parsley.css" rel="stylesheet">
 
 <script src="/js/parsley.min.js"></script>
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+
+<script>
+tinymce.init({ 
+	selector:'textarea' 
+});
+</script>
 
 
 
@@ -26,8 +33,11 @@
 				{{ Form::label('title', 'Title :')}}
 				{{ Form::text('title', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '255')) }}
 
+				{{ Form::label('slug', 'Slug :')}}
+				{{ Form::text('slug', null, array('class' => 'form-control', 'required' => '', 'minlegth' => '5', 'maxlength' => '255'))}}
+		
 				{{ Form::label('body', 'Blog Post :')}}
-				{{ Form::textarea('body', null, array('class' => 'form-control', 'required' => '')) }}
+				{{ Form::textarea('body', null, array('class' => 'form-control')) }}
 
 				{{ Form::submit('Create Post', array('class' => 'btn btn-success btn-lg btn-block button-post-margin'))}}
 			    
