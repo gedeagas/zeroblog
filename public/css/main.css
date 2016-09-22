@@ -1,9 +1,84 @@
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,600';
+
+
+
+.raleway-font {
+    font-family: 'Raleway', sans-serif !important;
+       
+
+
+}
+
+.raleway-bold {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 600;
+}
+
+.raleway-light {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 300;
+}
+
+
+
+
+
+.bg-color-abu {
+    background-color: #F5F5F5;
+}
+
+
+
+
+
+.home-lg-pad {
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+.home-display-text {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 300;
+    
+}
+
+.home-font {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 600;
+    color: #fff;
+}
+
+.home-header {
+    color: #fff;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400;
+}
+
+.home-header-pad {
+    padding-top: 20px;
+}
+
+.main-vd {
+    background-color: #1b1b1b !important;
+
+    margin-top: -20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.home-content-padding {
+        padding: 68px 34px;
+}
+
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }

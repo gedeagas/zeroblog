@@ -7,7 +7,9 @@
 
 <script>
 tinymce.init({ 
-	selector:'textarea' 
+	selector:'textarea',
+	font_formats: 'Raleway=Raleway,sans-serif;'
+ 
 });
 </script>
 @endsection

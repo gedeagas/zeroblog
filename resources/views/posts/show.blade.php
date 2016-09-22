@@ -3,6 +3,7 @@
 @section('thetitle', 'View Post')
 
 @section('konten')
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
 			<h1>{{ $post->title }}</h1>
@@ -61,5 +62,5 @@
 
 
 
-
+</div>
 @endsection
