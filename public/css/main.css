@@ -21,11 +21,19 @@
 }
 
 
+.font-color-white {
+    color: #FFF !important;
+}
+
 
 
 
 .bg-color-abu {
     background-color: #F5F5F5;
+}
+
+.bg-color-biru {
+    background-color: #22A7F0;
 }
 
 
@@ -55,7 +63,7 @@
 }
 
 .home-header-pad {
-    padding-top: 20px;
+    padding: 40px 20px 20px 20px;
 }
 
 .main-vd {

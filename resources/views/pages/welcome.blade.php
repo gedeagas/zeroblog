@@ -13,12 +13,18 @@ Homepage
 
     <div class="container home-header-pad">
         <div class="row home-header">
-            <div class="text-center col-md-2">Home</div>
+            <div class="col-md-4">
+                
+            </div>
+
+            <div class="col-md-8">
+                <div class="text-center col-md-2">Home</div>
             <div class="text-center col-md-2">About</div>
             <div class="text-center col-md-2">Blog</div>
             <div class="text-center col-md-2">Contact</div>
             <div class="text-center col-md-2">Project</div>
             <div class="text-center col-md-2">Work</div>
+            </div>
         </div>
     </div>
 
@@ -27,10 +33,10 @@ Homepage
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <div class="embed-responsive embed-responsive-16by9 ">   
-                    <video autoplay loop>
+                    <video id="videoElementID" autoplay loop>
                       <source src="video.mp4" type="video/mp4" />
                       <source src="video.ogg" type="video/ogg" />
-                      Your browser does not support the video tag.
+                      Not Supported....
                     </video>
                 </div> 
             </div>
@@ -44,10 +50,10 @@ Homepage
     <div class="row">
         <div class="col-md-6">
 
-        <h1 class="raleway-bold">Projects</h1>
+        <h1 class="raleway-bold">Who Am I ?</h1>
 
         <p class="raleway-light">
-           In the last 15 years I've not only worked on hundreds of client projects, but also founded my own; A handful of companies and initiatives that I'm immensely proud of. Combined they've created products, services, events and resources that have been experienced by millions of people. Each project has, in its own way, allowed me to tell stories, meet people and grow as a designer. 
+          Donec semper augue et tempor sagittis. Fusce pretium sagittis sagittis. Aliquam erat volutpat. Vivamus sit amet dui neque. Sed accumsan ut purus et rutrum. Morbi et vulputate orci. Etiam maximus, lacus nec blandit fermentum, turpis lacus sodales dui, eget tristique nulla velit et erat. Maecenas a dolor sit amet urna viverra cursus non fringilla velit.
  
         </p>
             
@@ -75,13 +81,57 @@ Homepage
 
         <div class="col-md-8 col-md-offset-2">
              <p class="raleway-light text-center">
-                Since 2009 I've built and collaborated on a number of consumer products. Mostly apps, but also hardware and services. By far the most of them have been made with the Robocat team and lot's of amazing people took part in these adventures. Each video is presented here as it were at the launch and in reverse chronological order. 
-                A journey back in time.
+                Donec semper augue et tempor sagittis. Fusce pretium sagittis sagittis. Aliquam erat volutpat. Vivamus sit amet dui neque. Sed accumsan ut purus et rutrum. Morbi et vulputate orci. Etiam maximus, lacus nec blandit fermentum, turpis lacus sodales dui, eget tristique nulla velit et erat. Maecenas a dolor sit amet urna viverra cursus non fringilla velit.
             </p>
         </div>
     </div>
 </div>
 </div>
+
+<div class="container home-content-padding">
+    <div class="row">
+        <div class="col-md-6">
+
+        
+            
+        </div>
+        <div class="col-md-6">
+            <h1 class="raleway-bold">Internet Of Things</h1>
+
+            <p class="raleway-light">
+               Donec semper augue et tempor sagittis. Fusce pretium sagittis sagittis. Aliquam erat volutpat. Vivamus sit amet dui neque. Sed accumsan ut purus et rutrum. Morbi et vulputate orci. Etiam maximus, lacus nec blandit fermentum, turpis lacus sodales dui, eget tristique nulla velit et erat. Maecenas a dolor sit amet urna viverra cursus non fringilla velit.
+     
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-color-biru">
+<div class="container-fluid home-content-padding">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="font-color-white raleway-bold text-center">
+                Sponsors
+
+            </h1>
+
+           
+        </div>
+
+        <div class="col-md-8 col-md-offset-2">
+             <p class="font-color-white raleway-light text-center">
+                Donec semper augue et tempor sagittis. Fusce pretium sagittis sagittis. Aliquam erat volutpat. Vivamus sit amet dui neque. Sed accumsan ut purus et rutrum. Morbi et vulputate orci. Etiam maximus, lacus nec blandit fermentum, turpis lacus sodales dui, eget tristique nulla velit et erat. Maecenas a dolor sit amet urna viverra cursus non fringilla velit.
+            </p>
+        </div>
+
+        <div class="col-md-8 col-md-offset-2">
+            <img src="http://images.apple.com/macbook-pro/images/overview_apps_hero_2x.jpg" class="img-responsive">
+        </div>
+    </div>
+</div>
+</div>
+
 
 <div class="container-fluid">
 
@@ -110,5 +160,11 @@ Homepage
     </div>
 </div>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+   $('#videoElementID').bind('contextmenu',function() { return false; });
+});
+</script>
 
 @endsection
