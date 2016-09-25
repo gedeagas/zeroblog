@@ -115,3 +115,10 @@
 .form-spacing-top {
     margin-top: 20px;
 }
+
+
+
+.login-bg {
+min-height:100%;
+    background-color: #1b1b1b;
+}
