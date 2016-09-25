@@ -11,7 +11,7 @@ Homepage
 
 <div class="main-vd">
 
-    <div class="container home-header-pad">
+    <div class="hidden-xs  container home-header-pad">
         <div class="row home-header">
             <div class="col-md-4">
                 
@@ -112,7 +112,7 @@ Homepage
     <div class="row">
         <div class="col-md-12">
             <h1 class="font-color-white raleway-bold text-center">
-                Sponsors
+                Curriculum Vitae
 
             </h1>
 
@@ -136,11 +136,11 @@ Homepage
 <div class="container-fluid">
 
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-10 col-md-offset-1">
         
         @foreach($posts as $post)
 
-            <div class="post-home">
+            <div class="post-home col-md-3">
 
                
                 <h3 class="raleway-font">{{$post->title}}</h3>
@@ -155,9 +155,7 @@ Homepage
 
     </div>
 
-    <div class="col-md-4">
-        
-    </div>
+   
 </div>
 </div>
 

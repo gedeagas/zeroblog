@@ -15,7 +15,7 @@ tinymce.init({
 @endsection
 
 @section('konten')
-
+<div class="container">
 	<div class="row">
 
 		{!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'PATCH']) !!}
@@ -25,6 +25,11 @@ tinymce.init({
 			{{ Form::text('title', null, ["class" => 'form-control input-lg']) }}
 			{{ Form::label('slug', 'Slug:', ['class' => 'form-spacing-top'])}}
 			{{ Form::text('slug', null, ["class" => 'form-control']) }}
+
+			{{ Form::label('category_id', 'Category :')}}
+			{{ Form::select('category_id', $categories, null, ['class' => 'form-control']) }}
+
+
 			{{ Form::label('body', 'Body:', ['class' => 'form-spacing-top'])}}
 			{{ Form::textarea('body', null, ["class" => 'form-control']) }}
 
