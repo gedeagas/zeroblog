@@ -35,8 +35,8 @@ Homepage
                 <div class="embed-responsive embed-responsive-16by9 ">   
                     <video id="videoElementID" autoplay loop>
                       <source src="video.mp4" type="video/mp4" />
-                      <source src="video.ogg" type="video/ogg" />
-                      Not Supported....
+                      <source src="video.ogv" type="video/ogg" />
+                      <img src="ag1.jpg" class="img-responsive" alt="">
                     </video>
                 </div> 
             </div>

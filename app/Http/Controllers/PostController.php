@@ -24,7 +24,7 @@ class PostController extends Controller
     {
         // Create Varable and store all the blog post 
 
-        $posts = Post::orderBy('id', 'desc')->paginate(5);
+        $posts = Post::orderBy('id', 'desc')->paginate(10);
 
 
         // Return a view and shoing to the user 
